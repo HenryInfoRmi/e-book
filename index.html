@@ -32,6 +32,12 @@
         #bt-comprar:hover{
             background-color: rgb(104, 104, 104);
         }
+        .open{
+            height: 180px !important;
+        }
+        .open_icon{
+            transform: rotateZ(180deg);
+        }
         [data-anime]{
             opacity: 0;
             transition: .5s;
@@ -66,48 +72,58 @@
               <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Comprar</a>
+                    <a class="nav-link active" aria-current="page" href="#apresentacao">Comprar</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="#ebook1">E-book 1</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#ebook2">E-book 2</a>
+                    <a class="nav-link active" href="#ebook2">E-book 2 (Bônus)</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#ebook3">E-book 3</a>
+                    <a class="nav-link active" href="#ebook3">E-book 3 (Bônus)</a>
                   </li>
-                  
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#valor">Valor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#garantia">Garantia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#duvidas">Duvidas</a>
+                  </li>
                 </ul>
               </div>
             </div>
         </nav>
     </header>
-    <main style="transform: translateY(10vh);">
+    <img src="imagens/4931029.jpg" alt="" style="position: absolute; z-index: 0; width: 100%;">
+    <main style="transform: translateY(10vh); " >
+        
         <section id="apresentacao" style="height: 89.9vh; ">
             <div class="polign" style="height: 90vh; width: 100%; background-color: rgb(36, 36, 36); position: absolute; clip-path: polygon(0 0, 0% 100%, 100% 100%); z-index: 1;" ></div>
             <div class="content" style="display: flex; flex-direction: row; z-index: 2; align-items: center;">
                 <div class="moc" style="z-index: 2; height: 92vh; width: 50%; display: flex; flex-direction: row; align-items: center; ">
-                    <a href="#ebook1" style="display: contents;"><img src="imagens/Livro1.png" id="livro1" style="position: absolute; z-index: 3; width: 18vw; margin-left: 5%;  transition: 500ms;" alt=""></a>
-                    <a href="#ebook2" style="display: contents;"><img src="imagens/livro2.png" id="livro2" style="position: absolute; z-index: 4; width: 18vw; margin-left: 18%; transition: 500ms;" alt=""></a>
-                    <a href="#ebook3" style="display: contents;"><img src="imagens/livro3.png" id="livro3" style="position: absolute; z-index: 5; width: 18vw; margin-left: 31%; transition: 500ms;" alt=""></a>
+                    <a href="#ebook1" style="display: contents;"><img src="imagens/Livro1.png" href="#ebook1" id="livro1" style="position: absolute; z-index: 3; width: 18vw; margin-left: 5%;  transition: 500ms;" alt=""></a>
+                    <a href="#ebook2" style="display: contents;"><img src="imagens/livro2.png" href="#ebook2" id="livro2" style="position: absolute; z-index: 4; width: 18vw; margin-left: 18%; transition: 500ms;" alt=""></a>
+                    <a href="#ebook3" style="display: contents;"><img src="imagens/livro3.png" href="#ebook3" id="livro3" style="position: absolute; z-index: 5; width: 18vw; margin-left: 31%; transition: 500ms;" alt=""></a>
                 </div>
                 <div class="desc" style="z-index: 2; height: 92vh; width: 50%; display: flex; justify-content: center; flex-direction: column; padding: 1% 5%;">
-                    <h2 style="text-align: center; font-size: 50px; color: #ffc107;">Combo Mente Produtiva</h2>
+                    <h2 style="text-align: center; font-size: 50px; color: #ffc107;">Guia Mente Produtiva</h2>
                     <hr style="height: 4px; width: 30%; margin-left: 35%; margin-right: 35%; color: #ffc107 ; opacity: 1; margin-top: 0;">
-                    <p style="text-align: center; padding: 0 5%;">Aprenda a evitar esquecimentos e alcance melhores resultados de memória com um Guia que tem ajudado milhares de brasileiros todos os dias.</p>
+                    <p style="text-align: center; padding: 0 5%; font-size: 15px; font-weight: 600;">Aprenda a evitar esquecimentos e alcance melhores resultados de memória com um Guia que tem ajudado milhares de brasileiros todos os dias.</p>
                     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 8%;">
-                        
+                        <h5 style="width: 100%; margin-bottom: 0%; padding-left: 5%;">De: <strong style="text-decoration: line-through;">R$147,00</strong> Por: </h2>
                         <h1 style="color: green;"><strong style="font-size: 10px;">12X de</strong>  R$ 9,74*</h3>
                         <h4 style="margin: 2%; font-size: 15px;">ou R$ 97,00 à vista</h4>
                         <a href="https://pay.kiwify.com.br/QbDdapq" id="bt-comprar" style="padding: 2% 7%; margin: 3%; color: white; border-radius: 8px; text-decoration: none;"> <h4>Tornar minha mente produtiva</h3></a>
                     </div>
-                    <img src="imagens/garantia-novatonodp.png" alt="" style="width: 50% ; margin: 0 25%;">
+                    
                 </div>
             </div>
         </section>
         <div style="background-color: #282828;">
-        <section id="explicacao" style="height: 90vh;  background-color: rgb(36, 36, 36); display: flex; padding: 0 10%; flex-direction: column; overflow: hidden;">
+        <section id="explicacao" style="  background-color: rgb(36, 36, 36); display: flex; padding: 0 10%; flex-direction: column; overflow: hidden;">
             <div style="display: flex; align-items: center; flex-direction: column; justify-content: center; color: white;">
                 <h5>VOCÊ SOFRE COM ALGUM</h4>
                 <h1 style="font-size: 4rem;">Desses Problemas?</h1>
@@ -153,81 +169,229 @@
                 
             </div>
         </section>
-        <section id="apresentacao_mok" style="display: flex; height: 100vh;  background: rgb(36,36,36);
+        <section id="apresentacao_mok" style="display: flex;  background: rgb(36,36,36);
         background: linear-gradient(180deg, rgba(36,36,36,1) 11%, rgb(1 1 60 / 35%) 48%, rgba(36,36,36,1) 84%);">
-            <div id="ebook1" style=" display: flex; flex-direction: row; padding: 5%; flex: 1;">
+            <div id="ebook1" style=" display: flex; flex-direction: row; padding: 4% 5%; flex: 1;">
                 <img src="imagens/Livro1.png" data-anime="left" alt="" style="width: 18vw; position: absolute;">
                 <div style="flex: 1; display: flex; flex-direction: column; margin-left: 18vw; align-items: center; padding: 9%;">
                     <h1 style="font-family: 'Finger Paint', cursive; color: rgb(0, 119, 255);" >O SEGREDO DA MEMÓRIA!</h1>
                     <hr style="color: rgb(0, 119, 255); opacity: 1; height: 3px ; width: 50%;">
-                    <p style="color: white; font-size: 20px;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                    <p style="color: white; font-size: 30px;">Aprenda os princípios básicos e fundamentais da Mente para se comunicar de forma eficaz, e controle o seu cérebro, para motivar-se e motivar os outros, pensar positivo e criar ações que façam a diferença.</p>
+                    <p style="color: white; font-size: 30px;">No guia <strong style="color: rgb(0, 119, 255);;">O Segredo da Memória</strong> você desenvolverá um sistema que vai transformar a maneira que você pensa sobre a sua vida de uma maneira prática e simples, fazendo uma grande mudança em sua vida. </p>
                 </div>
             </div>
         </section>
-        <section id="apresentacao_mok" style="display: flex; height: 100vh;  background: rgb(36,36,36);
+        <section id="apresentacao_mok" style="display: flex;  background: rgb(36,36,36);
         background: linear-gradient(180deg, rgba(36,36,36,1) 11%, rgb(71 78 0 / 27%) 48%, rgba(36,36,36,1) 84%);">
-            <div id="ebook2" style=" display: flex; flex-direction: row; padding: 5%;">
+            <div id="ebook2" style=" display: flex; flex-direction: row; padding: 2% 5%;">
                 <img src="imagens/livro2.png" data-anime="left" alt="" style="width: 18vw; position: absolute;">
                 <div style="flex: 1; display: flex; flex-direction: column; margin-left: 18vw; align-items: center; padding: 9%;">
                     <h1 style=" color: rgb(255, 221, 0);" >DICAS PARA AUMENTAR A SUA MEMÓRIA</h1>
                     <hr style="color: rgb(255, 221, 0); opacity: 1; height: 3px ; width: 50%;">
-                    <p style="color: white; font-size: 20px;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                    <p style="color: white; font-size: 30px;">Estudar para provas e concursos pode ser uma tarefa complicada e exaustiva se você não tiver as ferramentas corretas.</p>
+                    <p style="color: white; font-size: 30px;">Neste guia <strong style=" color: rgb(255, 221, 0);">Dicas Para Aumentar a Memória</strong>, você aprenderá a colocar em prática diversas técnicas de memorização aprimoradas, a fim de otimizar seus estudos e promover maior produtividade.</p>
+                    <p style="color: white; font-size: 30px;">O guia aborda, de maneira simples e dinâmica, alguns dos procedimentos mais eficazes quando o assunto é memorização.</p>
                 </div>
             </div>
         </section>
-        <section id="apresentacao_mok" style="display: flex; height: 100vh;  background: rgb(36,36,36);
+        <section id="apresentacao_mok" style="display: flex;  background: rgb(36,36,36);
         background: linear-gradient(180deg, rgba(36,36,36,1) 11%, rgb(226 190 139 / 27%) 48%, rgba(36,36,36,1) 84%);"">
-            <div id="ebook3" style=" display: flex; flex-direction: row; padding: 5%;">
+            <div id="ebook3" style=" display: flex; flex-direction: row; padding: 2% 5%;">
                 <img src="imagens/livro3.png" data-anime="left" alt="" style="width: 18vw; position: absolute;">
                 <div style="flex: 1; display: flex; flex-direction: column; margin-left: 18vw; align-items: center; padding: 7%;">
                     <h1 style=" font-family: 'Bitter', serif; color: rgb(226, 190, 139); text-align: center;" >8 HACKS CEREBRAIS QUE AUMENTAM A PRODUTIVIDADE</h1>
                     <hr style="color: rgb(226, 190, 139); opacity: 1; height: 3px ; width: 50%;">
-                    <p style="color: white; font-size: 20px;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                    <p style="color: white; font-size: 30px; width: 100%;">Você deseja se tornar uma versão mais eficaz e produtiva de você?</p>
+                    <p style="color: white; font-size: 30px;">É isso que você vai aprender nesse guia <strong style=" color: rgb(226, 190, 139);">8 Hacks Cerebrais que aumentam a Produtividade.</strong> A maneira de fazer isso é fortalecer sua mente. Ao fortalecer seu cérebro, você pode melhorar sua capacidade de fazer todo o resto.</p>
+                    <p style="color: white; font-size: 30px;">Afinal, é o seu cérebro que você usa para resolver problemas, tomar decisões e planejar o futuro. Se você está preso a uma rotina e não consegue obter os resultados que deseja da vida, provavelmente é hora de dar uma olhada em si mesmo e tentar fazer uma mudança.
+                        Quando você se muda, altera os limites do que é possível.
+                        </p>
                 </div>
             </div>
         </section>
-        <section id="feedback" style=" height: 100vh; background-color: white;">
-
+    </div>
+        <section id="valor" style=" padding: 2% 20%; background-image: url(/imagens/3433823.jpg); background-size: cover;">
+            <div style=" width: 100%; box-shadow:  2px 2px 15px rgb(97, 97, 97); border-radius: 10px; background-color: white; display: flex; flex-direction: column;">
+                <div style=" background-color: #242424; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; display: flex; align-items: center; justify-content: center; ">
+                    <h1 style="font-size: 30px; margin: 2%; color: white;">Oferta Especial Somente Hoje!</h1>
+                </div>
+                <div>
+                    <div style="display: flex; flex-direction: column; width: 100%; ">
+                        <h5 style="margin: 2% 23%; margin-bottom: 0; transform: translateY(10px);">De: <strong style="text-decoration: line-through;">R$147,00</strong> Por: </h2>
+                        <h1 id="valor_prod" style="color: green; font-size: 60px; text-align: center; margin-bottom: 30px;">R$00,00</h1>
+                    </div>
+                    <div style="display: flex; width: 100%; flex-direction: column; align-items: center;">
+                        <p style="font-size: 20px ; font-weight: 600; margin: 0%;" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                            </svg> Tenha Mais Resultados
+                        </p>
+                        <hr style="width: 75%; height: 2px; color: rgba(68, 68, 68, 0.541); opacity: 1; margin: 2%;">
+                        <p style="font-size: 20px ; font-weight: 600; margin: 0%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                            </svg>  Tenha Mais Foco
+                        </p>
+                        <hr style="width: 75%; height: 2px; color: rgba(68, 68, 68, 0.541); opacity: 1; margin: 2%;">
+                        <p style="font-size: 20px ; font-weight: 600; margin: 0%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                            </svg>  Ganhe Mais Eficiência
+                        </p>
+                        <hr style="width: 75%; height: 2px; color: rgba(68, 68, 68, 0.541); opacity: 1; margin: 2%;">
+                        <p style="font-size: 20px ; font-weight: 600; margin: 0%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                            </svg>  Performance De Memória
+                        </p>
+                        <a href="https://pay.kiwify.com.br/QbDdapq" id="bt-comprar" style="padding: 1% 7%; margin: 3%; color: white; border-radius: 8px; text-decoration: none;"> <h4>Tornar minha mente produtiva</h3></a>
+                        <img src="imagens/garantia-novatonodp.png" alt="" style="width: 50% ; margin: 0 25%;">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="resumo">
-
+        <section id="garantia" style=" height: 60vh; color: white; background-color: #242424; display: flex; flex-direction: row; align-items: center;padding: 5%;">
+            <div id="selo" style="height: 100%;margin-left: 15%; " data-anime="left">
+                <img src="imagens/selo-de-garantia-7-dias-1.png" style="height: 100%;" alt="">
+            </div>
+            <div id="desc_selo" style="height: 100%; margin: 3%; display: flex; flex-direction: column; padding: 4%;" data-anime="top">
+                <h1 style="font-size: 50px;">7 Dias De Garantia.</h1>
+                <p style="font-size: 20px; font-weight: 600;">Se em 7 dias você não gostar do conteúdo, ou por algum motivo achar que o guia Otimizando a memória não é pra você, pode entrar em contato conosco e solicitar seu dinheiro de volta.</p>
+            </div>
         </section>
-        <section id="avaliacao">
-
+        <section id="duvidas" style="background-color: white; padding-bottom: 5%; display: flex; flex-direction: column; align-items: center; background-image: url(/imagens/v748-toon-75.jpg); background-size: cover;">
+            <h1 style="margin: 3%; font-size: 60px; ">PERGUNTAS FREQUENTES</h1>
+            <div class="quest" onclick="actQuest(0)" style="width: 65%; margin: 1%; color: white; border-radius: 50px; transition: 300ms; overflow: hidden; height: 80px; background-color: rgb(36, 36, 36); box-shadow:  2px 2px 7px rgb(97, 97, 97);">
+                <div  style="display: flex; align-items: center; height: 80px; justify-content: space-between;">
+                    <p style="width: 80%; margin-left: 5%; margin-bottom: 0; font-size: 1.5rem;  text-align: justify;">O Guia Mente Produtiva é um livro físico e eu receberei em casa?</p>
+                    <img class="quest_icon"  src="/imagens/caret-down-fill.svg" alt=""  style="width: 30px; margin-right: 3%; transition: 300ms;">
+                </div>
+                <div style="display: flex; align-items: center; height: 80px;">
+                    <p  style="width: 80%; margin-right: 10%; margin-left: 10%; margin-bottom: 0; font-size: 25px;  text-align: justify;">Não. É um livro em formato digital (e-book) que você receberá por e-mail.</p>
+                </div>
+            </div>
+            <div class="quest" onclick="actQuest(1)" style="width: 65%; margin: 1%; color: white; border-radius: 50px; transition: 300ms; overflow: hidden; height: 80px; background-color: rgb(36, 36, 36); box-shadow:  2px 2px 7px rgb(97, 97, 97);">
+                <div  style="display: flex; align-items: center; height: 80px; justify-content: space-between;">
+                    <p style="width: 80%; margin-left: 5%; margin-bottom: 0; font-size: 1.5rem;  text-align: justify;">Como terei acesso ao Guia?</p>
+                    <img class="quest_icon"  src="/imagens/caret-down-fill.svg" alt=""  style="width: 30px; margin-right: 3%; transition: 300ms;">
+                </div>
+                <div style="display: flex; align-items: center; height: 80px;">
+                    <p  style="width: 80%; margin-right: 10%; margin-left: 10%; margin-bottom: 0; font-size: 25px;  text-align: justify;">Assim que o pagamento for confirmado, você receberá um e-mail para acessar a área de download do Guia Mente Produtiva.</p>
+                </div>
+            </div>
+            <div class="quest" onclick="actQuest(2)" style="width: 65%; margin: 1%; color: white; border-radius: 50px; transition: 300ms; overflow: hidden; height: 80px; background-color: rgb(36, 36, 36); box-shadow:  2px 2px 7px rgb(97, 97, 97);">
+                <div  style="display: flex; align-items: center; height: 80px; justify-content: space-between;">
+                    <p style="width: 80%; margin-left: 5%; margin-bottom: 0; font-size: 1.5rem;  text-align: justify;">Quais são as formas de pagamento?</p>
+                    <img class="quest_icon"  src="/imagens/caret-down-fill.svg" alt=""  style="width: 30px; margin-right: 3%; transition: 300ms;">
+                </div>
+                <div style="display: flex; align-items: center; height: 80px;">
+                    <p  style="width: 80%; margin-right: 10%; margin-left: 10%; margin-bottom: 0; font-size: 25px;  text-align: justify;">O pagamento pode ser feito por cartão de crédito, boleto, pix e várias outras formas.</p>
+                </div>
+            </div>
+            <div class="quest" onclick="actQuest(3)" style="width: 65%; margin: 1%; color: white; border-radius: 50px; transition: 300ms; overflow: hidden; height: 80px; background-color: rgb(36, 36, 36); box-shadow:  2px 2px 7px rgb(97, 97, 97);">
+                <div  style="display: flex; align-items: center; height: 80px; justify-content: space-between;">
+                    <p style="width: 80%; margin-left: 5%; margin-bottom: 0; font-size: 1.5rem;  text-align: justify;">Perdi o meu Guia ou apaguei sem querer. Preciso pagar novamente?</p>
+                    <img class="quest_icon"  src="/imagens/caret-down-fill.svg" alt=""  style="width: 30px; margin-right: 3%; transition: 300ms;">
+                </div>
+                <div style="display: flex; align-items: center; height: 80px;">
+                    <p  style="width: 80%; margin-right: 10%; margin-left: 10%; margin-bottom: 0; font-size: 25px;  text-align: justify;">Não. Basta acessar sua área de compras através do e-mail recebido e fazer o download novamente. </p>
+                </div>
+            </div>
         </section>
-        <section id="valor">
-            
-        </section>
-        </div>
+        
+        
     </main>
     <footer>
 
     </footer>
     <script>
         const target = document.querySelectorAll("[data-anime]")
+        const valor = document.getElementById('valor_prod')
         const animateClass = 'animate'
+        const itens = document.getElementsByClassName('quest')
+        const itens_icon = document.getElementsByClassName('quest_icon')
+        const menuItem = document.querySelectorAll('.navbar-nav a')
+        const menuItemMoc = document.querySelectorAll('.moc a')
+        const scrollsmof = (event) => {
+            event.preventDefault()
+            const element = event.target
+            const id = element.getAttribute('href')
+            const section = document.querySelector(id)
+            console.log(event)
+            if(id=='#garantia'){
+                window.scroll(0, section.offsetTop-100)
+            }else if(id=='#ebook1'){
+                window.scroll(0, section.offsetTop-10)
+            }else if(id=='#valor'){
+                window.scroll(0, section.offsetTop)
+            }else if(id=='#ebook2'){
+                window.scroll(0, section.offsetTop-10)
+            }else if(id=='#ebook3'){
+                window.scroll(0, section.offsetTop+20)
+            }else{
+                window.scroll(0, section.offsetTop-80)
+            }
+            
+        }
+        
+        menuItem.forEach(item => {
+            item.addEventListener('click', scrollsmof)
+        })
+        menuItemMoc.forEach(item => {
+            item.addEventListener('click', scrollsmof)
+        })
+
+        
+
+        const actQuest = (item)=>{
+            
+            for (let i = 0; i < itens.length; i++) {
+                console.log(item==i)
+                if(item==i){
+                    if(itens[i].clientHeight < 90){
+                        itens[i].className = 'quest open'
+                        itens_icon[i].className = 'quest_icon open_icon'
+                    }else{
+                        itens[i].className = 'quest'
+                        itens_icon[i].className = 'quest_icon'
+                    }
+                }else{
+                    itens[i].className = 'quest'
+                    itens_icon[i].className = 'quest_icon'
+                }
+            }
+        }
+
         window.addEventListener('scroll', ()=>{
             const windowtop = window.pageYOffset + 300
-
-            if(windowtop > target[0].offsetTop){
-                target[0].className = animateClass
-                setTimeout(()=>{target[1].className = animateClass},500)
-                setTimeout(()=>{target[2].className = animateClass},1000)
+            const cont = 98
+            if(valor.innerHTML == 'R$00,00'){
+                if(windowtop > valor.offsetTop){
+                    for (let i = 0; i < cont; i++) {
+                        setTimeout(()=>{
+                            valor.innerHTML = "R$" + i + ",00"
+                        },10 * i)
+                    }
+                }
             }
-            if(windowtop > target[3].offsetTop){
-                target[3].className = animateClass
-            }
-            if(windowtop > target[4].offsetTop){
-                target[4].className = animateClass
-            }
-            if(windowtop > target[5].offsetTop){
-                target[5].className = animateClass
-            }
+            target.forEach((element, i)=>{
+                if(i==6){
+                    if(windowtop + 300 > element.offsetTop){
+                        element.className = animateClass
+                    }
+                }else{
+                    if(windowtop > element.offsetTop){
+                        if(i==1){
+                            setTimeout(()=>{element.className = animateClass},500)
+                        }else if(i==2){
+                            setTimeout(()=>{element.className = animateClass},1000)
+                        }else{
+                            element.className = animateClass
+                        }
+                    }
+                }
+            })
         })
-        const autoScroll = (ebook)=>{
-            window.pageYOffset = 2000
-            console.log('hi')
-        }
     </script>
 </body>
 </html>
